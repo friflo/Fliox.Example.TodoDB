@@ -11,8 +11,8 @@ namespace TodoHub;
 public static class Provider
 {
     private static readonly Dictionary<string,string> ConnectionStrings = new Dictionary<string,string>(){
-        { "mysql",      "Server=localhost;User ID=root;Password=YOURPASSWORD;Database=todo_db;Application Name=Fliox" },
-        { "mariadb",    "Server=localhost;User ID=root;Password=YOURPASSWORD;Database=todo_db" },
+        { "mysql",      "Server=localhost;Port=3306;User ID=root;Password=YOURPASSWORD;Database=todo_db;Application Name=Fliox" },
+        { "mariadb",    "Server=localhost;Port=3307;User ID=root;Password=YOURPASSWORD;Database=todo_db" },
         { "postgres",   "Host=localhost;Username=postgres;Password=YOURPASSWORD;Database=todo_db;Application Name=Fliox" },
         { "sqlserver",  "Data Source=.;Integrated Security=True;Database=todo_db" },
     };
