@@ -72,7 +72,6 @@ run unit tests of all examples
 dotnet test
 ⏩
 Passed! - Failed: 0, Passed: 7, Skipped: 0, Total: 7, Duration: 421 ms - TodoTest.dll (net6.0)
-Passed! - Failed: 0, Passed: 6, Skipped: 0, Total: 6, Duration: 712 ms - DemoTest.dll (net6.0)
 ```
 
 run a Hub as an HTTP server from its folder - e.g.
