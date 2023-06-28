@@ -9,7 +9,7 @@ namespace TodoHub;
 
 internal static class  Program
 {
-    public static void Main()
+    public static void Main(string[] args)
     {
         var schema      = DatabaseSchema.Create<TodoClient>();
         var database    = new FileDatabase("main_db", "../Test/DB/main_db", schema); // records stored in 'main_db/jobs'
@@ -21,7 +21,9 @@ internal static class  Program
         // --- create HttpHost
         var httpHost    = new HttpHost(hub, "/fliox/");
         httpHost.UseStaticFiles(HubExplorer.Path); // nuget: https://www.nuget.org/packages/Friflo.Json.Fliox.Hub.Explorer
-        HttpServer.RunHost("http://+:8010/", httpHost);
+        
+        Startup.Run(args, httpHost); // ASP.NET Core 6
+        // HttpServer.RunHost("http://+:8010/", httpHost);
     }
 }
 
