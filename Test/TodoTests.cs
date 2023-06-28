@@ -9,7 +9,7 @@ namespace TodoTest;
 
 public static class TodoTests
 {
-    private static readonly string          DbPath = GetBasePath() + "Todo/Test/DB/main_db";
+    private static readonly string          DbPath = GetBasePath() + "Test/DB/main_db";
     private static readonly DatabaseSchema  Schema = DatabaseSchema.Create<TodoClient>();
 
     /// <summary>create a <see cref="MemoryDatabase"/> clone for every client to avoid side effects by DB mutations</summary>
@@ -21,7 +21,7 @@ public static class TodoTests
 
     private static string GetBasePath()
     {
-        string baseDir = Directory.GetCurrentDirectory() + "/../../../../../";
+        string baseDir = Directory.GetCurrentDirectory() + "/../../../../";
         return Path.GetFullPath(baseDir);
     }
 
