@@ -1,7 +1,7 @@
 # **TodoDB**
 
 The **TodoHub** is a Web server application to demonstrate the features of the
-[**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox#-hub) **.NET** library.
+[**JSON Fliox**](https://github.com/friflo/Friflo.Json.Fliox#-features) **.NET** library.
 
 *In short*  
 **JSON Fliox** is .NET library supporting simple and efficient access to SQL & NoSQL databases via C# or Web clients.
