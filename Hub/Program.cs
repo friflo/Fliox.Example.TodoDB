@@ -12,7 +12,7 @@ internal static class  Program
     public static void Main(string[] args)
     {
         var schema      = DatabaseSchema.Create<TodoClient>();
-        var database    = new FileDatabase("main_db", "../Test/DB/main_db", schema); // records stored in 'main_db/jobs'
+        var database    = Provider.CreateDatabase("main_db", "file", schema);
         database.AddCommands(new TodoCommands());
         var hub         = new FlioxHub(database);
         hub.Info.Set ("TodoDB", "dev", "https://github.com/friflo/Fliox.Example.TodoDB", "rgb(0 171 145)"); // optional

@@ -18,6 +18,10 @@
     <ItemGroup>
       <PackageReference Include="Friflo.Json.Fliox.Hub.Explorer" Version="0.35.0" />
       <PackageReference Include="Friflo.Json.Fliox.Hub.AspNetCore" Version="0.35.0" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.SQLite" Version="0.41.0" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.MySQL" Version="0.41.0" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.PostgreSQL" Version="0.41.0" />
+      <PackageReference Include="Friflo.Json.Fliox.Hub.SQLServer" Version="0.41.0" />
     </ItemGroup>
 
     <ItemGroup>
