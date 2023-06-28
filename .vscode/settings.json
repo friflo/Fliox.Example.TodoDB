@@ -1,0 +1,55 @@
+{
+    "files.exclude": {
+        ".docs": false,
+        ".gitignore": true,
+        ".gitpod.yml": false,
+		"**/obj": true,
+		"**/bin": true,
+        "**/.github": false,
+        "**/.vs": true,
+        "**/.vscode": false,
+        "**/.run": true,
+        "**/.idea": true,
+        "**/*.user": true,
+        "**/*.csproj": false,
+        "**/*.DotSettings": true,
+        "**/appsettings.json": true,
+        "package.json": false,
+        "package-lock.json": true,
+        "node_modules": true,
+        ".scripts": true,
+        ".gitattributes": true
+    },
+    "cSpell.words": [
+        "bchavez",
+        "Chapsas",
+        "cref",
+        "demohub",
+        "DTO",
+        "GraphiQL",
+        "Inscape",
+        "LINQ",
+        "mdast",
+        "Npgsql",
+        "Randomizer",
+        "Swashbuckle",
+        "todohub",
+        "Ullrich",
+        "Unicodes",
+        "upsert",
+        "upserts",
+        "Walkthrough"
+    ],
+    "csharp.unitTestDebuggingOptions": {
+        "logging": {
+            "moduleLoad": false
+        }
+    },
+    "explorer.compactFolders": false,
+    "[markdown]": {
+        "editor.wordWrap": "off"
+    },
+    "omnisharp.enableImportCompletion": true,
+    "markdown.preview.doubleClickToSwitchToEditor": false,
+    "markdown.preview.markEditorSelection": false
+}
