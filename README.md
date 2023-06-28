@@ -107,7 +107,7 @@ Otherwise open the **Hub Explorer** in your browser: http://localhost:8010/fliox
 
 run the .NET Test client accessing the Hub from its folder - e.g.
 ```cmd
-cd ./Todo/Test
+cd ./Test
 dotnet run
 ⏩
 --- jobs:
