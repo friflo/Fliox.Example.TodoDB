@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "TodoHub",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build TodoHub",
+            "program": "${workspaceFolder}/Hub/bin/Debug/net6.0/TodoHub.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Hub",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "logging": {
+                "moduleLoad": false
+            }
+        },
+        {
+            "name": "TodoTest",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build TodoTest",
+            "program": "${workspaceFolder}/Test/bin/Debug/net6.0/TodoTest.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Test",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "logging": {
+                "moduleLoad": false
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}

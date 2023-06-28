@@ -1,0 +1,68 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build all",
+            "isBuildCommand": true,
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/TodoDB.sln",
+                "/property:GenerateFullPaths=true"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test",
+            "isTestCommand": true,
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/TodoDB.sln",
+                "-l",
+                "console;verbosity=detailed"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/TodoDB.sln",
+                "/property:GenerateFullPaths=true"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "clean",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "clean",
+                "${workspaceFolder}/TodoDB.sln"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        // ----------------------- build projects -----------------------
+        {
+            "label": "build TodoHub",
+            "isBuildCommand": true,
+            "command": "dotnet",
+            "type": "process",
+            "args": ["build", "${workspaceFolder}/Hub/TodoHub.csproj"],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build TodoTest",
+            "isBuildCommand": true,
+            "command": "dotnet",
+            "type": "process",
+            "args": ["build", "${workspaceFolder}/Test/TodoTest.csproj"],
+            "problemMatcher": "$msCompile"
+        },
+    ]
+}
