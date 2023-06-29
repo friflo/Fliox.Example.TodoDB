@@ -12,7 +12,7 @@ public static class Provider
 {
     private static readonly Dictionary<string,string> ConnectionStrings = new() {
         { "file",       "../Test/DB/main_db" }, // records stored in folder: main_db/jobs
-        { "sqlite",     "todo_db.sqlite3" },
+        { "sqlite",     "Data Source=todo_db.sqlite3" },
         { "mysql",      "Server=localhost;Port=3306;User ID=root;Password=YOURPASSWORD;Database=todo_db;Application Name=Fliox" },
         { "mariadb",    "Server=localhost;Port=3307;User ID=root;Password=YOURPASSWORD;Database=todo_db" },
         { "postgres",   "Host=localhost;Username=postgres;Password=YOURPASSWORD;Database=todo_db;Application Name=Fliox" },
