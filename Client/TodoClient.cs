@@ -1,10 +1,9 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using Friflo.Json.Fliox.Hub.Client;
 using Friflo.Json.Fliox.Hub.Host;
 
 // ReSharper disable All
-namespace Todo;
+
 
 /// <summary>
 /// The <see cref="TodoClient"/> offer two functionalities: <br/>
@@ -26,11 +25,8 @@ public class TodoClient : FlioxClient
 // ---------------------------------- entity models ----------------------------------
 public class Job
 {
-    [Key]       public  long        id { get; set; }
-    ///<summary> short job title / name </summary>
-    [Required]  public  string      title;
-                public  bool?       completed;
-                public  DateTime?   created;
-                public  string      description;
+    [Key]       public  long    id;
+    [Required]  public  string  title;
+                public  bool?   completed;
 }
 
